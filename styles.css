@@ -132,11 +132,11 @@ img { max-width: 100%; display: block; }
 }
 .hero__bg-word {
   position: absolute;
-  top: 50%;
+  top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: var(--font-serif);
-  font-size: clamp(120px, 20vw, 360px);
+  font-size: clamp(80px, 20vw, 360px);
   font-weight: 500;
   color: rgba(255, 255, 255, 0.05);
   letter-spacing: -0.03em;
