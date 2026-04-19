@@ -37,3 +37,17 @@ window.addEventListener('scroll', () => {
     ticking = true;
   }
 });
+
+const lazyBgs = document.querySelectorAll('[data-bg]');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      el.style.backgroundImage = `url('${el.dataset.bg}')`;
+      observer.unobserve(el); // загрузили — больше не следим
+    }
+  });
+});
+
+lazyBgs.forEach(el => observer.observe(el));
