@@ -432,7 +432,7 @@ img { max-width: 100%; display: block; }
 .timeline__island-name {
   font-family: var(--font-serif);
   font-weight: 500;
-  font-size: clamp(32px, 4vw, 48px);
+  font-size: clamp(30px, 3vw, 48px);
   line-height: 1;
   letter-spacing: -0.01em;
   margin-bottom: 8px;
@@ -493,7 +493,7 @@ img { max-width: 100%; display: block; }
 .day__title {
   font-family: var(--font-serif);
   font-weight: 500;
-  font-size: clamp(20px, 2vw, 26px);
+  font-size: clamp(18px, 2vw, 26px);
   line-height: 1.25;
   margin-bottom: 8px;
   color: var(--ink);
